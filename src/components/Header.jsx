@@ -6,7 +6,11 @@ function Header() {
   return (
     <header className="navBar">
       <img className="navBarLogos" src={logo} alt="LogoMaoSegurandoMoeda" />
-      <img className="navBarLogos" src={menuSanduiche} alt="MenuSanduiche" />
+      <img
+        className="navBarLogos menuSanduich"
+        src={menuSanduiche}
+        alt="MenuSanduiche"
+      />
     </header>
   );
 }

@@ -12,6 +12,11 @@
   border-color: rgb(25, 194, 101);*/
 }
 
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+} /*16px*/
+
 :root {
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -27,17 +32,13 @@
   --white: #ebebeb;
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
+  --letterSpacing: 1px;
 }
 
 /*BODY*/
 body {
-  padding: 0;
-  background: var(--backgroundColor);
-  font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  color: var(--textColor);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: var(--letterSpacing);
 }
 
 /*HEADER*/
@@ -45,6 +46,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
   background-color: var(--darkGrey);
   padding: 0.5rem;
@@ -52,4 +54,83 @@ body {
 
 .navBarLogos {
   height: 4rem;
+}
+
+/*MONTH*/
+.monthSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+}
+
+.monthSection h1 {
+  font-family: "Montserrat", sans-serif;
+
+  color: var(--white);
+  background-color: var(--darkGrey);
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 5rem;
+}
+
+.monthSection img {
+  padding: 1rem;
+}
+
+.menuSanduich {
+  height: 2.5rem;
+}
+
+/*SALDOMENSAL*/
+.saldoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 1rem;
+}
+
+.saldoContainer a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #c9af26;
+}
+
+.saldoContainerSubDiv {
+  padding: 3rem;
+  background-color: #dae2e9;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.saldoContainerSubDiv h2 {
+  padding-bottom: 1rem;
+}
+
+/*ButtonRound*/
+
+.AddRoundButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 2rem 2rem 2rem;
+  text-align: center;
+}
+
+.ButtonContainer img {
+  margin-top: 0.5rem;
+  height: 4.5rem;
 }
