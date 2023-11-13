@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SaldoMensal() {
   return (
     <main className="saldoContainer">
@@ -5,7 +7,7 @@ function SaldoMensal() {
         <h2>Saldo: - R$30,00</h2>
         <p>08/11/2023</p>
       </div>
-      <a href="https://www.youtube.com/">Extrato</a>
+      <Link to={"/extrato"}>Extrato</Link>
     </main>
   );
 }
