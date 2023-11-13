@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Saldo from "./Saldo";
 
 function SaldoMensal() {
   return (
     <main className="saldoContainer">
       <div className="saldoContainerSubDiv">
-        <h2>Saldo: - R$30,00</h2>
+        <Saldo />
         <p>08/11/2023</p>
       </div>
       <Link to={"/extrato"}>Extrato</Link>

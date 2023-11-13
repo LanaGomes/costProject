@@ -29,7 +29,16 @@ html {
 
   /*CORES*/
   --darkGrey: #2b2b2b;
+  --lightgrey: #ebebeb;
   --white: #ebebeb;
+
+  --veryLightBlue: #dae2e9;
+  --darkerBlue: #2b344b;
+
+  --green: #8bcbc7;
+  --laranja: #e9a879;
+
+  /*OUTROS*/
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
   --letterSpacing: 1px;
@@ -104,7 +113,7 @@ a:hover {
 
 .saldoContainerSubDiv {
   padding: 3rem;
-  background-color: #dae2e9;
+  background-color: var(--veryLightBlue);
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -133,4 +142,57 @@ a:hover {
 .ButtonContainer img {
   margin-top: 0.5rem;
   height: 4.5rem;
+}
+
+/*Extract*/
+
+.extractSaldo {
+  background-color: var(--veryLightBlue);
+  text-align: center;
+  padding: 0.4rem;
+}
+
+.extractMonth {
+  height: 7rem;
+}
+
+.entradasESaidasContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+}
+
+.layotEntradasESaídas {
+  width: 90%;
+  margin-bottom: 1rem;
+  color: #2b2b2b;
+}
+
+.layotEntradasESaídas header {
+  font-weight: 700;
+  color: #2b2b2b;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.layotEntradasESaídas h2 {
+  padding: 0.2rem 0.4rem 0.2rem 0.4rem;
+  background-color: var(--lightgrey);
+}
+
+.layotEntradasESaídas h3 {
+  font-size: 0.9rem;
+  padding: 0.3rem 0.5rem 0.2rem 0.5rem;
+  color: #888888;
+}
+
+.extractEntradas header {
+  background-color: var(--green);
+}
+
+.extractSaidas header {
+  background-color: var(--laranja);
 }
