@@ -15,6 +15,7 @@ function Extract() {
       <div className="extractSaldo">
         <Saldo />
       </div>
+
       <main className="entradasESaidasContainer">
         <section className="extractEntradas layotEntradasESaídas">
           <header>{`Entradas: + 5800`}</header>
@@ -22,10 +23,6 @@ function Extract() {
         </section>
         <section className="extractSaidas layotEntradasESaídas">
           <header>{`Saídas: - 5809`}</header>
-          <Saidas />
-          <Saidas />
-          <Saidas />
-          <Saidas />
           <Saidas />
           <Saidas />
           <Saidas />

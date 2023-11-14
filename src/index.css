@@ -7,9 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 
-  /*border: solid;
+  border: solid;
   border-width: 1px;
-  border-color: rgb(25, 194, 101);*/
+  border-color: rgb(25, 194, 101);
 }
 
 html {
@@ -166,7 +166,7 @@ a:hover {
 }
 
 .layotEntradasESaídas {
-  width: 90%;
+  width: 80%;
   margin-bottom: 1rem;
   color: #2b2b2b;
 }
@@ -195,4 +195,13 @@ a:hover {
 
 .extractSaidas header {
   background-color: var(--laranja);
+}
+
+.editWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
 }
