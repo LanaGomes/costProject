@@ -3,6 +3,7 @@ import Saldo from "../components/Saldo";
 import Month from "../components/Month";
 import Entradas from "../components/Entradas";
 import Saidas from "../components/Saidas";
+import { Link } from "react-router-dom";
 
 function Extract() {
   return (
@@ -26,8 +27,10 @@ function Extract() {
           <Saidas />
           <Saidas />
           <Saidas />
-          <Saidas />
         </section>
+        <Link to={"/"}>
+          <h2>Voltar</h2>
+        </Link>
       </main>
     </>
   );

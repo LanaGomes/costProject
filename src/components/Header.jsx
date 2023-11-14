@@ -1,11 +1,14 @@
 import "../index.css";
 import logo from "../images/logo.png";
 import menuSanduiche from "../images/menu1.png";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header className="navBar">
-      <img className="navBarLogos" src={logo} alt="LogoMaoSegurandoMoeda" />
+      <Link to={"/"}>
+        <img className="navBarLogos" src={logo} alt="LogoMaoSegurandoMoeda" />
+      </Link>
       <img
         className="navBarLogos menuSanduich"
         src={menuSanduiche}

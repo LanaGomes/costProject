@@ -50,6 +50,10 @@ body {
   letter-spacing: var(--letterSpacing);
 }
 
+a {
+  color: var(--darkerBlue);
+}
+
 /*HEADER*/
 .navBar {
   display: flex;
@@ -71,7 +75,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 9rem;
+  height: 8rem;
 }
 
 .monthSection h1 {
@@ -108,14 +112,18 @@ body {
 }
 
 a:hover {
-  color: #c9af26;
+  color: var(--laranja);
+}
+
+button:hover {
+  color: var(--laranja);
 }
 
 .saldoContainerSubDiv {
   padding: 3rem;
   background-color: var(--veryLightBlue);
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .saldoContainerSubDiv h2 {
@@ -186,7 +194,11 @@ a:hover {
 .layotEntradasESaídas h3 {
   font-size: 0.9rem;
   padding: 0.3rem 0.5rem 0.2rem 0.5rem;
-  color: #888888;
+  color: var(--darkGrey);
+
+  border-width: 0px 1px 1px 1px;
+  border: solid;
+  border-color: var(--lightgrey);
 }
 
 .extractEntradas header {
@@ -197,11 +209,38 @@ a:hover {
   background-color: var(--laranja);
 }
 
+/*EditPage*/
+
 .editWrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.editContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  background-color: var(--lightgrey);
+}
+
+.input-group-text {
+  background-color: var(--darkerBlue);
+  color: var(--white);
+}
+
+input {
+  width: 100%;
+}
+
+.EditButton {
+  padding: 2rem;
+  background-color: var(--darkGrey);
 }
