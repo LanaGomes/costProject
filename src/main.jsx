@@ -1,5 +1,4 @@
 import React from "react";
-import App from "./App.jsx";
 import "./index.css";
 import ErrorPage from "./pages/ErrorPage.jsx";
 
