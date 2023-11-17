@@ -4,8 +4,35 @@ import Month from "../components/Month";
 import Entradas from "../components/Entradas";
 import Saidas from "../components/Saidas";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function Extract() {
+  const [expenses, setExpenses] = useState([])
+  const [incomes, setIncomes] = useState([])
+  const [totalIncomes, setTotalIncomes] = useState(0)
+  const [totalExpenses, setTotalExpenses] = useState(0)
+
+  useEffect(() => {
+    async function getExpenses(){
+      const response = await fetch("http://localhost:8080/expenses")
+      const data = await response.json()
+      
+      setExpenses(data.expenses)
+      setTotalExpenses(data.expenses.reduce((accumulator, currentValue) => accumulator + currentValue.Amount, 0))
+
+    }
+
+    async function getIncomes(){
+      const response = await fetch("http://localhost:8080/incomes")
+      const data = await response.json()
+      
+      setIncomes(data.incomes)
+      setTotalIncomes(data.incomes.reduce((accumulator, currentValue) => accumulator + currentValue.Amount, 0))
+    }
+
+    getExpenses()
+    getIncomes()
+  }, [])
   return (
     <>
       <Header />
@@ -19,14 +46,22 @@ function Extract() {
 
       <main className="entradasESaidasContainer">
         <section className="extractEntradas layotEntradasESaídas">
-          <header>{`Entradas: + 5800`}</header>
-          <Entradas />
+          <header>{`Entradas: + ${totalIncomes ?? "carregando"}`}</header>
+          {
+            incomes.length > 0 ?
+            incomes.map(income => {
+              return <Entradas key={income.ID} name={income.Name} amount={income.Amount} />
+            }) : "carregando"
+          }
         </section>
         <section className="extractSaidas layotEntradasESaídas">
-          <header>{`Saídas: - 5809`}</header>
-          <Saidas />
-          <Saidas />
-          <Saidas />
+          <header>{`Saídas: - ${totalExpenses ?? "carregando"}`}</header>
+          {
+            expenses.length > 0 ?
+            expenses.map(expense => {
+              return <Saidas key={expense.ID} name={expense.Name} amount={expense.Amount} />
+            }) : <h1>{"carregando"}</h1>
+          }
         </section>
         <Link to={"/"}>
           <h3>Voltar</h3>
