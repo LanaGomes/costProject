@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Extract from "./pages/Extract.jsx";
 import Home from "./pages/Home.jsx";
 import EditPage from "./pages/EditPage.jsx";
+import AddCatPage from "./pages/AddCatPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/editpage",
     element: <EditPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/addcategoria",
+    element: <AddCatPage />,
     errorElement: <ErrorPage />,
   },
 ]);
