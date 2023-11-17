@@ -54,6 +54,10 @@ a {
   color: var(--darkerBlue);
 }
 
+h1 {
+  font-weight: bold;
+}
+
 /*HEADER*/
 .navBar {
   display: flex;
@@ -257,4 +261,12 @@ input {
   color: var(--white);
   border: none;
   border-radius: 2rem;
+}
+
+.editAddButton {
+  margin: 0.5rem 0 2rem 0;
+}
+
+.form-check {
+  margin: 0.5rem;
 }

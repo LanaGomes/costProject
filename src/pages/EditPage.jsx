@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AddRoundButton from "../components/AddRoundButton";
 
 function EditPage() {
   return (
@@ -45,11 +46,14 @@ function EditPage() {
             <option value="1">Farmácia</option>
             <option value="2">Uber</option>
             <option value="3">Alimentação</option>
-            <option id="editarCategorias" value="3">
-              Add ou editar categorias
-            </option>
           </select>
         </div>
+        <Link to={"/addcategoria"}>
+          <button className="editAddButton btn-darkeblue" type="submit">
+            Adicionar ou alterar categorias
+          </button>
+        </Link>
+
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
           <label class="form-check-label" for="exampleCheck1">
