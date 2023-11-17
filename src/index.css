@@ -7,9 +7,9 @@
   padding: 0;
   box-sizing: border-box;
 
-  border: solid;
+  /*border: solid;
   border-width: 1px;
-  border-color: rgb(25, 194, 101);
+  border-color: rgb(25, 194, 101);*/
 }
 
 html {
@@ -136,7 +136,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 1rem;
 }
 
 .ButtonContainer {
@@ -148,8 +147,7 @@ button:hover {
 }
 
 .ButtonContainer img {
-  margin-top: 0.5rem;
-  height: 4.5rem;
+  height: 5rem;
 }
 
 /*Extract*/
@@ -175,7 +173,7 @@ button:hover {
 
 .layotEntradasESaídas {
   width: 80%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: #2b2b2b;
 }
 
@@ -189,6 +187,7 @@ button:hover {
 .layotEntradasESaídas h2 {
   padding: 0.2rem 0.4rem 0.2rem 0.4rem;
   background-color: var(--lightgrey);
+  margin: 0;
 }
 
 .layotEntradasESaídas h3 {
@@ -202,11 +201,13 @@ button:hover {
 }
 
 .extractEntradas header {
-  background-color: var(--green);
+  background-color: var(--darkerBlue);
+  color: var(--white);
 }
 
 .extractSaidas header {
-  background-color: var(--laranja);
+  background-color: var(--darkerBlue);
+  color: var(--white);
 }
 
 /*EditPage*/
@@ -217,7 +218,7 @@ button:hover {
   justify-content: center;
   align-items: center;
 
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 1.2rem;
 }
 
@@ -229,6 +230,7 @@ button:hover {
   width: 100%;
 
   background-color: var(--lightgrey);
+  padding: 1rem;
 }
 
 .input-group-text {
@@ -236,11 +238,23 @@ button:hover {
   color: var(--white);
 }
 
+.input-group {
+  margin-top: 1rem;
+}
+
 input {
   width: 100%;
 }
 
-.EditButton {
-  padding: 2rem;
-  background-color: var(--darkGrey);
+.editButtons {
+  padding: 1rem;
+}
+
+.btn-darkeblue {
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  margin: 0.2rem;
+  background-color: var(--darkerBlue);
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
 }

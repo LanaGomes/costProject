@@ -29,7 +29,7 @@ function Extract() {
           <Saidas />
         </section>
         <Link to={"/"}>
-          <h2>Voltar</h2>
+          <h3>Voltar</h3>
         </Link>
       </main>
     </>

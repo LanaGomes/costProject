@@ -50,46 +50,29 @@ function EditPage() {
             </option>
           </select>
         </div>
-        <div className="input-group mb-3">
-          <div className="input-group-prepend">
-            <div className="input-group-text">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />
-            </div>
-          </div>
-          <input
-            type="text"
-            className="form-control"
-            aria-label="Text input with checkbox"
-          />
-          Gasto recorrente
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">
+            Gasto Recorrente
+          </label>
         </div>
-        <div className="input-group mb-3">
-          <div className="input-group-prepend">
-            <div className="input-group-text">
-              <input
-                type="checkbox"
-                aria-label="Checkbox for following text input"
-              />
-            </div>
-          </div>
-          <input
-            type="text"
-            className="form-control"
-            aria-label="Text input with checkbox"
-          />
-          Pago
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">
+            Pago
+          </label>
         </div>
         <div className="editButtons">
-          <button className="editButton" type="submit">
+          <button className="btn-darkeblue" type="submit">
             Salvar
           </button>
-          <button className="editButton" type="submit">
+          <button className="btn-darkeblue" type="submit">
             Cancelar
           </button>
         </div>
+        <Link to={"/"}>
+          <h3>Voltar</h3>
+        </Link>
       </div>
     </div>
   );
