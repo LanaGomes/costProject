@@ -1,8 +1,9 @@
-function Entradas() {
+/* eslint-disable react/prop-types */
+function Entradas({name, amount}) {
   return (
     <>
-      <h2>{`+5800`}</h2>
-      <h3>{`salário João`}</h3>
+      <h2>{amount}</h2>
+      <h3>{name}</h3>
     </>
   );
 }

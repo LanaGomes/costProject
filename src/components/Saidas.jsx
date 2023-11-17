@@ -1,8 +1,9 @@
-function Saidas() {
+/* eslint-disable react/prop-types */
+function Saidas({name, amount}) {
   return (
     <>
-      <h2>{`-100`}</h2>
-      <h3>{`Aluguel`}</h3>
+      <h2>{amount}</h2>
+      <h3>{name}</h3>
     </>
   );
 }
