@@ -8,7 +8,9 @@ function SaldoMensal() {
         <Saldo />
         <p>08/11/2023</p>
       </div>
-      <Link to={"/extrato"}>Extrato</Link>
+      <Link to={"/extrato"}>
+        <h3>Extrato</h3>
+      </Link>
     </main>
   );
 }

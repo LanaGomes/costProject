@@ -7,7 +7,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Extract from "./pages/Extract.jsx";
 import Home from "./pages/Home.jsx";
 import EditPage from "./pages/EditPage.jsx";
-import AddCatPage from "./pages/AddCatPage.jsx";
+import EditOrAddCategoryPage from "./pages/EditOrAddCategoryPage.jsx";
+import AddCategory from "./pages/AddCategory.jsx";
+import EditCategory from "./pages/EditCategory.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +29,20 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/addcategoria",
-    element: <AddCatPage />,
+    path: "/EditOrAddCategoryPage",
+    element: <EditOrAddCategoryPage />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/addcategory",
+    element: <AddCategory />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/editcategory",
+    element: <EditCategory />,
     errorElement: <ErrorPage />,
   },
 ]);

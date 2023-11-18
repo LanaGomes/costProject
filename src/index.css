@@ -36,7 +36,7 @@ html {
   --darkerBlue: #2b344b;
 
   --green: #8bcbc7;
-  --laranja: #e9a879;
+  --laranja: #b34b22;
 
   /*OUTROS*/
   --backgroundColor: var(--grey-50);
@@ -58,19 +58,26 @@ h1 {
   font-weight: bold;
 }
 
+button:hover {
+  color: var(--laranja);
+}
+
+label {
+  font-size: 1.5rem;
+}
+
 /*HEADER*/
 .navBar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
   background-color: var(--darkGrey);
-  padding: 0.5rem;
 }
 
 .navBarLogos {
-  height: 4rem;
+  height: 3.5rem;
+  margin: 0.3rem;
 }
 
 /*MONTH*/
@@ -79,12 +86,10 @@ h1 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 8rem;
+  height: 9rem;
 }
 
 .monthSection h1 {
-  font-family: "Montserrat", sans-serif;
-
   color: var(--white);
   background-color: var(--darkGrey);
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
@@ -115,23 +120,26 @@ h1 {
   font-weight: bold;
 }
 
-a:hover {
-  color: var(--laranja);
-}
-
-button:hover {
-  color: var(--laranja);
+.saldoContainerSubDiv {
+  padding: 2rem;
+  background-color: var(--veryLightBlue);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
 }
 
 .saldoContainerSubDiv {
-  padding: 3rem;
-  background-color: var(--veryLightBlue);
-  border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.saldoContainerSubDiv h2 {
-  padding-bottom: 1rem;
+h2 {
+  color: var(--darkerBlue);
+  font-weight: 700;
+}
+
+h3 {
+  color: var(--darkerBlue);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /*ButtonRound*/
@@ -146,12 +154,20 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 2rem 2rem 2rem;
+  margin-top: 1rem;
   text-align: center;
+
+  padding: 2rem;
+
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--veryLightBlue);
+  border-radius: 1rem;
+  margin-bottom: 3rem;
 }
 
 .ButtonContainer img {
-  height: 5rem;
+  height: 7rem;
 }
 
 /*Extract*/
@@ -261,6 +277,7 @@ input {
   color: var(--white);
   border: none;
   border-radius: 2rem;
+  font-size: 1.3rem;
 }
 
 .editAddButton {
@@ -269,4 +286,92 @@ input {
 
 .form-check {
   margin: 0.5rem;
+}
+
+/*EDITORADDCATEGORYPAGE*/
+.EditOrAddCategoryPage-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 2.5rem 0.5rem 0 0.5rem;
+}
+
+.registeredCategory-Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1rem 0.3rem 1.5rem 0.3rem;
+  background-color: var(--lightgrey);
+  padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.registeredCategory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0.5rem;
+  margin: 0.3rem;
+  font-size: 1rem;
+
+  border-width: 1px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: var(--darkerBlue);
+  border-style: solid;
+}
+
+.registeredCategory img {
+  width: 1.5rem;
+}
+
+.registeredCategory p {
+  margin: 0 0.5rem 0 0;
+}
+
+.EditOrAddCategoryPage-Container h2 {
+  margin-bottom: 2rem;
+}
+
+.EditOrAddCategoryPage-Container h4 {
+  margin-top: 1rem;
+}
+
+.EditOrAddCategoryPage-Container h3 {
+  margin: 2rem;
+}
+
+.addCategory-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  background-color: var(--lightgrey);
+  padding: 1rem;
+}
+
+.addCategory-containerMax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.2rem;
+}
+
+.addCategory-containerMax h2 {
+  margin: 2rem;
+}
+
+.addCategory-containerMax label {
+  margin-bottom: 0.5rem;
+}
+
+.addCategory-containerMax input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
