@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
+import VoltarLink from "../components/VoltarLink";
 
-Link;
 function AddCategory() {
   return (
     <div className="addCategory-containerMax">
@@ -10,9 +9,8 @@ function AddCategory() {
           <label>Nova categoria</label>
           <input placeholder="Ex.:mercado,transporte,etc" type="text"></input>
         </div>
-        <Link to={"/EditOrAddCategoryPage"}>
-          <h3>Voltar</h3>
-        </Link>
+
+        <VoltarLink page="/EditOrAddCategoryPage" />
       </div>
     </div>
   );

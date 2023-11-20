@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import VoltarLink from "../components/VoltarLink";
 
 function EditPage() {
   return (
@@ -7,7 +8,7 @@ function EditPage() {
       <div className="editContainer">
         <div className="input-group mb-3">
           <div className="input-group-prepend">
-            <label className="input-group-text" for="inputGroupSelect01">
+            <label className="input-group-text" htmlFor="inputGroupSelect01">
               Tipo de adição
             </label>
           </div>
@@ -33,7 +34,7 @@ function EditPage() {
 
         <div className="input-group mb-3">
           <div className="input-group-prepend">
-            <label className="input-group-text" for="inputGroupSelect01">
+            <label className="input-group-text" htmlFor="inputGroupSelect01">
               Categoria de gastos
             </label>
           </div>
@@ -55,17 +56,17 @@ function EditPage() {
 
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">
+          <label class="form-check-label" htmlFor="exampleCheck1">
             Gasto Recorrente
           </label>
         </div>
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">
+          <label class="form-check-label" htmlFor="exampleCheck1">
             Pago
           </label>
         </div>
-        <div className="editButtons">
+        <div className="editButtonsContainer">
           <button className="btn-darkeblue" type="submit">
             Salvar
           </button>
@@ -73,9 +74,7 @@ function EditPage() {
             Cancelar
           </button>
         </div>
-        <Link to={"/"}>
-          <h3>Voltar</h3>
-        </Link>
+        <VoltarLink page="/" />
       </div>
     </div>
   );

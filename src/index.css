@@ -30,13 +30,13 @@ html {
   /*CORES*/
   --darkGrey: #2b2b2b;
   --lightgrey: #ebebeb;
-  --white: #ebebeb;
+  --white: #f8f8f8;
 
   --veryLightBlue: #dae2e9;
   --darkerBlue: #2b344b;
 
   --green: #8bcbc7;
-  --laranja: #b34b22;
+  --laranja: #f3a837;
 
   /*OUTROS*/
   --backgroundColor: var(--grey-50);
@@ -66,6 +66,22 @@ label {
   font-size: 1.5rem;
 }
 
+.linkVoltar {
+  color: var(--darkerBlue);
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--laranja);
+    color: var(--white);
+  }
+}
+
 /*HEADER*/
 .navBar {
   display: flex;
@@ -78,6 +94,12 @@ label {
 .navBarLogos {
   height: 3.5rem;
   margin: 0.3rem;
+}
+
+.menuSanduich {
+  height: 3.5rem;
+  cursor: pointer; /* Adiciona um indicador de cursor ao passar o mouse */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
 }
 
 /*MONTH*/
@@ -94,10 +116,17 @@ label {
   background-color: var(--darkGrey);
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   border-radius: 5rem;
+  margin: 0;
 }
 
 .monthSection img {
   padding: 1rem;
+  cursor: pointer; /* Adiciona um indicador de cursor ao passar o mouse */
+  transition: transform 0.3s ease; /* Adiciona uma transição suave na transformação ao passar o mouse */
+
+  &:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+  }
 }
 
 .menuSanduich {
@@ -115,9 +144,16 @@ label {
   margin-top: 1rem;
 }
 
-.saldoContainer a {
-  font-size: 1.5rem;
+.layoutLink {
+  font-size: 2rem;
   font-weight: bold;
+  color: var(--darkerBlue); /* Adiciona cor ao link */
+  text-decoration: none; /* Remove a sublinhado padrão do link */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor ao passar o mouse */
+
+  &:hover {
+    color: var(--laranja); /* Altera a cor ao passar o mouse */
+  }
 }
 
 .saldoContainerSubDiv {
@@ -127,19 +163,15 @@ label {
   margin-bottom: 1rem;
 }
 
-.saldoContainerSubDiv {
-  margin-bottom: 1rem;
-}
-
-h2 {
+h2,
+h3 {
   color: var(--darkerBlue);
   font-weight: 700;
 }
 
 h3 {
-  color: var(--darkerBlue);
-  font-weight: 700;
   text-decoration: underline;
+  margin-top: 1rem; /* Adiciona margem superior para melhorar a legibilidade */
 }
 
 /*ButtonRound*/
@@ -167,7 +199,7 @@ h3 {
 }
 
 .ButtonContainer img {
-  height: 7rem;
+  height: 5rem;
 }
 
 /*Extract*/
@@ -179,38 +211,37 @@ h3 {
 }
 
 .extractMonth {
-  height: 7rem;
+  height: 9rem;
 }
 
 .entradasESaidasContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   margin-top: 1rem;
 }
 
-.layotEntradasESaídas {
+.layoutEntradasESaídas {
   width: 80%;
-  margin-bottom: 0.5rem;
-  color: #2b2b2b;
+  margin-bottom: 1rem;
+  color: var(--darkGrey);
 }
 
-.layotEntradasESaídas header {
+.layout header {
   font-weight: 700;
-  color: #2b2b2b;
+  color: var(--darkGrey);
   font-size: 1.5rem;
   padding: 0.5rem;
 }
 
-.layotEntradasESaídas h2 {
+.layout h2 {
   padding: 0.2rem 0.4rem 0.2rem 0.4rem;
   background-color: var(--lightgrey);
   margin: 0;
 }
 
-.layotEntradasESaídas h3 {
+.layout h3 {
   font-size: 0.9rem;
   padding: 0.3rem 0.5rem 0.2rem 0.5rem;
   color: var(--darkGrey);
@@ -220,11 +251,7 @@ h3 {
   border-color: var(--lightgrey);
 }
 
-.extractEntradas header {
-  background-color: var(--darkerBlue);
-  color: var(--white);
-}
-
+.extractEntradas header,
 .extractSaidas header {
   background-color: var(--darkerBlue);
   color: var(--white);
@@ -259,15 +286,15 @@ h3 {
 }
 
 .input-group {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 input {
   width: 100%;
 }
 
-.editButtons {
-  padding: 1rem;
+.editButtonsContainer {
+  padding: 0.5rem;
 }
 
 .btn-darkeblue {
@@ -285,7 +312,11 @@ input {
 }
 
 .form-check {
-  margin: 0.5rem;
+  margin: 0.5rem 0.3rem;
+}
+
+.form-check-input {
+  margin-right: 0.5rem;
 }
 
 /*EDITORADDCATEGORYPAGE*/
@@ -343,6 +374,7 @@ input {
   margin: 2rem;
 }
 
+/*ADDCATEGORY*/
 .addCategory-container {
   display: flex;
   flex-direction: column;

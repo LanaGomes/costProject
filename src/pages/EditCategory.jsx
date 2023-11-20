@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import VoltarLink from "../components/VoltarLink";
 
 function EditCategory() {
   return (
@@ -9,9 +9,7 @@ function EditCategory() {
           <label>Alterar categoria</label>
           <input placeholder="Ex.:mercado,transporte,etc" type="text"></input>
         </div>
-        <Link to={"/EditOrAddCategoryPage"}>
-          <h3>Voltar</h3>
-        </Link>
+        <VoltarLink page="/EditOrAddCategoryPage" />
       </div>
     </div>
   );
