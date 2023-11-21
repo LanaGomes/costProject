@@ -44,6 +44,43 @@ html {
   --letterSpacing: 1px;
 }
 
+/*RESPONSIVIDADE*/
+
+/*Small tablets*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  .homeContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .homeContainerChild {
+    width: 50%;
+    background-color: var(--lightgrey);
+  }
+}
+
+/*Desktops*/
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .homeContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .homeContainerChild {
+    width: 60%;
+    background-color: var(--lightgrey);
+  }
+  .navBar img {
+    height: 5rem;
+    margin: 0.5rem;
+  }
+}
+
+/*Extra Large Screens*/
+@media (min-width: 1920px) {
+  body {
+    background-color: #4bf7f7;
+  }
+}
+
 /*BODY*/
 body {
   font-family: "Roboto", sans-serif;
@@ -89,6 +126,7 @@ label {
   justify-content: space-between;
   align-items: center;
   background-color: var(--darkGrey);
+  width: 100%;
 }
 
 .navBarLogos {
@@ -117,7 +155,7 @@ label {
   padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   border-radius: 5rem;
   margin: 0;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 .monthSection img {
@@ -189,6 +227,7 @@ h3 {
   align-items: center;
   margin-top: 1rem;
   text-align: center;
+  background-color: var(--white);
 
   padding: 2rem;
 

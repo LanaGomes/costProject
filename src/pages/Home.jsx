@@ -7,9 +7,13 @@ function Home() {
   return (
     <div>
       <Header />
-      <Month />
-      <SaldoMensal />
-      <AddSection />
+      <div className="homeContainer">
+        <div className="homeContainerChild">
+          <Month />
+          <SaldoMensal />
+          <AddSection />
+        </div>
+      </div>
     </div>
   );
 }

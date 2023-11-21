@@ -7,7 +7,11 @@ function Header() {
   return (
     <header className="navBar">
       <Link to={"/"}>
-        <img className="navBarLogos" src={logo} alt="LogoMaoSegurandoMoeda" />
+        <img
+          className="navBarLogos logo"
+          src={logo}
+          alt="LogoMaoSegurandoMoeda"
+        />
       </Link>
       <img
         className="navBarLogos menuSanduich"
