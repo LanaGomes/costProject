@@ -6,7 +6,7 @@ function SaldoMensal() {
     <main className="saldoContainer">
       <div className="saldoContainerSubDiv">
         <Saldo />
-        <p>08/11/2023</p>
+        <p>08/11/2023</p> {/*atualizar data moment*/}
       </div>
       <Link to={"/extrato"}>
         <h3 className="layoutLink">Extrato</h3>

@@ -44,47 +44,11 @@ html {
   --letterSpacing: 1px;
 }
 
-/*RESPONSIVIDADE*/
-
-/*Small tablets*/
-@media (min-width: 768px) and (max-width: 1199px) {
-  .homeContainer {
-    display: flex;
-    justify-content: center;
-  }
-  .homeContainerChild {
-    width: 50%;
-    background-color: var(--lightgrey);
-  }
-}
-
-/*Desktops*/
-@media (min-width: 1200px) and (max-width: 1400px) {
-  .homeContainer {
-    display: flex;
-    justify-content: center;
-  }
-  .homeContainerChild {
-    width: 60%;
-    background-color: var(--lightgrey);
-  }
-  .navBar img {
-    height: 5rem;
-    margin: 0.5rem;
-  }
-}
-
-/*Extra Large Screens*/
-@media (min-width: 1920px) {
-  body {
-    background-color: #4bf7f7;
-  }
-}
-
 /*BODY*/
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: var(--letterSpacing);
+  min-height: 100%;
 }
 
 a {
@@ -446,4 +410,36 @@ input {
 .addCategory-containerMax input {
   margin-bottom: 1rem;
   padding: 0.5rem;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 767px) {
+  .ButtonContainer {
+    padding: 1rem;
+    margin: 0.2rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .homeContainer {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .navBar img {
+    height: 5rem;
+  }
+
+  .saldoContainerSubDiv,
+  .ButtonContainer {
+    padding: 2rem 7rem 2rem 7rem;
+  }
+
+  .monthSection h1 {
+    font-size: 2rem;
+    padding: 2rem 7rem 2rem 7rem;
+  }
+}
+
+.monthSection img {
+  height: 5rem;
 }
