@@ -46,9 +46,9 @@ html {
 
 /*BODY*/
 body {
+  overflow-x: scroll;
   font-family: "Roboto", sans-serif;
   letter-spacing: var(--letterSpacing);
-  min-height: 100%;
 }
 
 a {
@@ -414,6 +414,9 @@ input {
 
 /*RESPONSIVIDADE*/
 @media (max-width: 767px) {
+  .homeContainer {
+    width: 100%;
+  }
   .ButtonContainer {
     padding: 1rem;
     margin: 0.2rem;
@@ -426,18 +429,21 @@ input {
 }
 @media (min-width: 992px) {
   .navBar img {
-    height: 5rem;
+    height: 3rem;
   }
-
   .saldoContainerSubDiv,
   .ButtonContainer {
-    padding: 2rem 7rem 2rem 7rem;
+    padding: 1rem 7rem 1rem 7rem;
   }
 
   .monthSection h1 {
     font-size: 2rem;
-    padding: 2rem 7rem 2rem 7rem;
+    padding: 1rem 7rem 1rem 7rem;
   }
+}
+
+.ButtonContainer {
+  padding: 0.2rem 3rem 0.2rem 3rem;
 }
 
 .monthSection img {
